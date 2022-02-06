@@ -1,0 +1,124 @@
+mount logic
+-------------
+https://github.com/minetest/minetest/blob/be05c9022d8b6eff63f477bc8ca52efd7d631cb6/doc/lua_api.txt#L7157
+https://notabug.org/TenPlus1/mobs_redo/src/master/api.txt
+https://notabug.org/TenPlus1/mobs_redo/src/master/api.lua
+https://github.com/TheTermos/mobkit/blob/master/mobkit_api.txt
+https://github.com/TheTermos/mobkit/blob/master/init.lua
+
+mobkit example:
+https://github.com/TheTermos/wildlife/blob/master/init.lua
+
+
+mobs_redo properties checklist
+------------------
+[x] visual -- passed through
+[x] visual_size -- passed through
+[x] textures -- passed through
+[x] physical -- passed through
+[x] collide_with_objects -- passed through
+[x] collisionbox
+[x] mesh
+
+[ ] nametag  -- probably set during object initialization
+[ ] type = animal|monster|npc -- TODO: implement brains
+[x] hp_min -- passed through
+[x] hp_max -- passed through
+[x] lifetimer -- timeout
+[x] armor -- can be either a table, or a number
+[ ] passive
+[x] walk_velocity -- either max_speed, or part of action logic
+[x] run_velocity  -- either max_speed, or part of action logic
+[ ] stand_chance
+[ ] walk_chance
+[ ] randomly_turn
+[ ] jump
+[x] jump_height
+[ ] stepheight
+[ ] fly
+[ ] fly_in
+[ ] keep_flying
+[ ] stay_near = { nodes = string-or-table, chance = # }
+[ ] runaway
+[ ] pushable
+[x] view_range
+[ ] damage
+[ ] damage_group
+[ ] damage_texture_modifier
+[ ] knock_back
+[ ] fear_height
+[ ] fall_speed
+[ ] fall_damage
+[ ] water_damage
+[ ] air_damage
+[ ] lava_damage
+[ ] fire_damage
+[ ] light_damage
+[ ] light_damage_min
+[ ] light_damage_max
+[x] suffocation
+[ ] floats
+[ ] follow
+[ ] reach
+[ ] docile_by_day
+[ ] attack_chance
+[ ] attack_monsters
+[ ] attack_animals
+[ ] attack_npcs
+[ ] attack_players
+[ ] owner_loyal
+[ ] group_attack
+[ ] group_helper
+[ ] attack_type = dogfight | shoot | dogshoot | explode
+[ ] explosion_radius
+[ ] explosion_damage_radius
+[ ] explosion_timer
+[ ] allow_fuse_reset
+[ ] stop_to_explode
+[ ] arrow
+[ ] arrow_override
+[ ] dogshoot_switch
+[ ] dogshoot_count_max
+[ ] dogshoot_count2_max
+[ ] shoot_interval
+[ ] shoot_offset
+[ ] specific_attack
+[ ] runaway_from
+[ ] ignore_invisibility
+[ ] blood_amount
+[ ] blood_texture
+[ ] pathfinding
+[ ] immune_to
+[ ] makes_footstep_sound
+[x] sounds  -- TODO write xlation
+[ ] drops
+[ ] visual
+[ ] visual_size
+[ ] collisionbox
+[ ] selectionbox
+[ ] textures
+[ ] child_texture
+[ ] gotten_texture
+[ ] texture_mods
+[ ] mesh
+[ ] gotten_mesh
+[ ] rotate
+[ ] glow
+[ ] double_melee_attack
+[ ] animation
+[ ] replace_what
+[ ] replace_with
+[ ] replace_rate
+[ ] replace_offset
+[ ] on_replace(self, pos, oldnode, newnode)
+[ ] on_die
+[ ] on_rightclick
+[ ] on_blast
+[ ] on_spawn
+[ ] after_activate
+[ ] on_breed
+[ ] on_grown
+[ ] do_punch
+[ ] custom_attack
+[ ] on_flop
+[ ] do_custom

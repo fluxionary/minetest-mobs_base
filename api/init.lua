@@ -1,0 +1,16 @@
+mobs_base.api = {}
+
+dofile(mobs_base.modpath .. "/api/add_mob.lua")
+dofile(mobs_base.modpath .. "/api/alias_mob.lua")
+dofile(mobs_base.modpath .. "/api/attach.lua")
+dofile(mobs_base.modpath .. "/api/boom.lua")
+dofile(mobs_base.modpath .. "/api/capture_mob.lua")
+dofile(mobs_base.modpath .. "/api/effect.lua")
+dofile(mobs_base.modpath .. "/api/feed_tame.lua")
+dofile(mobs_base.modpath .. "/api/other.lua")
+dofile(mobs_base.modpath .. "/api/protect.lua")
+dofile(mobs_base.modpath .. "/api/register_arrow.lua")
+dofile(mobs_base.modpath .. "/api/register_egg.lua")
+dofile(mobs_base.modpath .. "/api/register_mob.lua")
+dofile(mobs_base.modpath .. "/api/remove.lua")
+dofile(mobs_base.modpath .. "/api/spawn.lua")
